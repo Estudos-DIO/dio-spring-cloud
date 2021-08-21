@@ -20,7 +20,7 @@ public class CarrinhoController {
         Optional<Carrinho> salvarCarrinho = repositorioCarrinho.findById( id );
         Carrinho novoCarrinho = null;
 
-        if( salvarCarrinho.isPresent() ) {
+        if( !salvarCarrinho.isPresent() ) {
             novoCarrinho = new Carrinho( id );
         } else {
             novoCarrinho = salvarCarrinho.get();
