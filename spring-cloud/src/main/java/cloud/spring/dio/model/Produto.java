@@ -3,8 +3,6 @@ package cloud.spring.dio.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
-import java.lang.annotation.Documented;
-
 //@Document(indexName="produto", type="catalogo")
 @Document(indexName="produto", createIndex = false)
 public class Produto
