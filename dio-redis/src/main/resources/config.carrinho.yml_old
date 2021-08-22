@@ -1,0 +1,7 @@
+
+#server.port=8082
+#spring.application.name=carrinho
+#spring.cloud.config.uri=http://localhost:8888
+
+server:
+   port: 8082
